@@ -1,0 +1,40 @@
+.d_flex{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bg_img {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: .5px solid  rgb(231, 231, 231);
+    box-shadow: 5px 5px 5px #CCC;
+    margin: auto;
+    margin-block: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 2rem;
+    row-gap: 1rem;
+    align-self: center;
+}
+
+.card h2 {
+    font-size: 20px;
+}
+
+.card p{
+    font-size: 16px;
+    color: var(--dark-gray);
+}
