@@ -6,7 +6,7 @@ import truck from '../../assets/support/truck.svg'
 
 const Support = () => {
   return (
-      <div className={`${styles.cards} ${styles.grid}`}>
+        <div className={`${styles.cards} ${styles.grid}`}>
 
         <div className={`${styles.card} ${styles.center}`}>
           <div className={`${styles.bg_img} ${styles.d_flex}`}>
@@ -36,11 +36,11 @@ const Support = () => {
           <div className={`${styles.bg_img} ${styles.d_flex}`}>
             <img src={truck} alt="truck" />
           </div>
-          <h3>30 Day Reuters</h3>
+          <h3>30 Day Returns</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, temporibus.</p>
         </div>
 
-      </div>
+        </div>
     
   )
 }
