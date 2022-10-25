@@ -1,0 +1,94 @@
+/* -- GÖR OM CONTAINER I APP */
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* ------------------------- */
+
+.hero_bg {
+    background-color: #F4F4F4;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img img{
+    height: 100%;
+}
+
+.text_group {
+    padding: 2rem;
+}
+
+.text_group h1 {
+    font-size: 60px;
+}
+
+.text_group h3 {
+    font-size: 30px;
+}
+.text_group p {
+    padding-block: 1rem;
+}
+
+.btn_hero {
+    padding: .6em 1.6em .6em 1.6em;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_hero::before {
+    position: absolute;
+    content: '';    
+    height: 15px;
+    width: 15px;
+    border: 2px solid #fff;
+    border-right: none;
+    border-bottom: none;
+    top: 4px;
+    left: 3px;
+    box-sizing: border-box;
+}
+
+.btn_hero:hover::before{
+    height: 35px;
+    width: 133px;
+    border: 2px solid #fff;
+    border-right: none;
+    border-bottom: none;
+    transition: height 0.5s linear, width 0.5s linear;
+}
+
+.btn_hero::after {
+    position: absolute;
+    content: '';    
+    height: 15px;
+    width: 15px;
+    border: 2px solid #fff;
+    border-left: none;
+    border-top: none;
+    bottom: 4px;
+    right: 3px;
+    box-sizing: border-box;
+}
+
+.btn_hero:hover::after{
+    height: 35px;
+    width: 133px;
+    border: 2px solid #fff;
+    border-left: none;
+    border-top: none;
+    transition: height 0.5s linear, width 0.5s linear;
+}
+
