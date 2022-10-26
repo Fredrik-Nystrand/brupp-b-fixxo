@@ -1,0 +1,26 @@
+.grid {
+  width: 100%;
+  display: grid;
+  gap: 1.3rem;
+}
+
+.col1 {
+  grid-template-columns: 1fr;
+}
+
+.col2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.col3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gridItem {
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  padding-block: 1rem;
+}

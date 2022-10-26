@@ -1,0 +1,69 @@
+.wrapper {
+  max-height: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.imgHalf {
+  width: 40%;
+}
+
+.imgFull {
+  width: 100%;
+}
+
+.imgWrapper img {
+  max-height: 100%;
+  width: 100%;
+  object-position: top;
+  object-fit: cover;
+}
+
+.contentWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.category {
+  display: flex;
+  color: var(--dark-gray);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.name {
+  display: flex;
+  font-weight: 600;
+}
+
+.rating {
+  display: flex;
+}
+
+.price {
+  display: flex;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.inactivePrice {
+  color: var(--dark-gray);
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: line-through;
+}

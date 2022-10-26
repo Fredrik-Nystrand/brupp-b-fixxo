@@ -1,12 +1,17 @@
-import './App.css';
-import Footer from './components/Footer/Footer'
+import "./App.css"
+import { useEffect, useState } from "react"
+import Footer from "./components/Footer/Footer"
+import ProductGrid from "./components/ProductGrid/ProductGrid"
+import fakeProducts from "./Store/fakeProducts.json"
 
 function App() {
   return (
     <div className="container-outer">
-      <div className="container-inner"></div>
+      <div className="container-inner">
+        <ProductGrid products={fakeProducts} vertical={true} title="Top Recent Products" />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
