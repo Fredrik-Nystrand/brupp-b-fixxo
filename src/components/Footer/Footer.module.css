@@ -1,3 +1,45 @@
+
+
 .footer {
-    background-color: #000;
+    background-color: var(--light-gray);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.dflex {
+    display: flex;
+    
+}
+.section {
+    margin-right: 4rem;
+}
+.link {
+    list-style: none;
+}
+.link a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: 300;
+    
+}
+.apps {
+    background-image: 'brupp-b-fixxo/src/components/Footer/img/app-store-badge.png';
+    width: 128px;
+    height: 40px;
+    border: 1px solid blue;
+}
+.footerBottom {
+    width: 100%;
+    margin-top: 2rem;   
+}
+.hr {
+    border-top: 1px solid var(--dark-gray);
+    
+    opacity: 40%;
+}
+.footerBottom p {
+    color: var(--dark-gray);
+    padding: .6rem;
+    text-align: center;
+    justify-content: center;
 }

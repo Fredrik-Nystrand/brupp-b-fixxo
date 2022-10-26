@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="container-outer">
       <div className="container-inner"></div>
+      <Footer />
     </div>
   );
 }
