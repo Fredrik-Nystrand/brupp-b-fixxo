@@ -5,7 +5,6 @@ import hero from '../../assets/Hero/Hero.svg'
 const Hero = () => {
   return (
   <header className={`${styles.hero_bg}`}>
-     <div className={`${styles.container}`}>
       <div className={`${styles.hero}`}>  
 
             <div className={`${styles.text_group}`}>
@@ -20,8 +19,6 @@ const Hero = () => {
             </div>
 
         </div>
-      </div>
-
     </header>
   )
 }
