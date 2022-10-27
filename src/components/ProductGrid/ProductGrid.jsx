@@ -14,7 +14,9 @@ const ProductGrid = ({ products, vertical = false, title = "" }) => {
       <div
         className={`${styles.grid} ${
           bp.lessThan("md") ? styles.col1 : bp.lessThan("lg") ? styles.col2 : styles.col3
-        } ${bp.lessThan("sm") ? "p1" : bp.lessThan("lg") && "p2"}`}>
+        } ${bp.lessThan("sm") ? "p1" : bp.lessThan("lg") && "p2"}
+        
+        `}>
         {products.map((product) => (
           <ProductCard
             vertical={vertical}

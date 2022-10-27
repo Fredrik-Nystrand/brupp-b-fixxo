@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="container-outer">
       <div className="container-inner">
-        <ProductGrid products={fakeProducts} vertical={true} title="Top Recent Products" />
+        <ProductGrid products={fakeProducts} vertical={false} />
       </div>
     </div>
   )
