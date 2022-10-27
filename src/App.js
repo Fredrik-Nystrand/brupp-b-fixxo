@@ -4,14 +4,11 @@ import Hero from './components/Hero/Hero';
 
 function App() {
   return (
-    <>
-      <Hero/>
     <div className="container-outer">
+      <Hero/>
       <div className="container-inner"></div>
     </div>
-
-    </>
   );
 }
 
-export default App;
+export default App
