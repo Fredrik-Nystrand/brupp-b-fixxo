@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from './Footer.module.css'
-import appstore from './img'
+import appstore from '/Users/danielkarlsson/Dropbox/Mac/Documents/EC-Frontend/Backend/Gruppuppgift/brupp-b-fixxo/src/components/Footer/img/app-store-badge.png'
 
 
 
 const Footer = () => {
   return ( 
-    <div className={`${styles.footer} + container-outer`}>
+    <div className={`${styles.footer} container-outer`}>
      
-      <div className={`${styles.dflex} + `}>
+      <div className={`${styles.dflex}`}>
 
         <section className={`${styles.section}`}>
           <h5>Customer Service</h5>
@@ -48,6 +48,7 @@ const Footer = () => {
             <a href="#"><img src={appstore} alt="" /></a>
 
           </div>
+
         </section>
 
         
