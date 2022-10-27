@@ -5,6 +5,10 @@
     display: flex;
 }
 
+.aling-items-center {
+    align-items: center;
+}
+
 .center {
     justify-content: center;
     align-items: center;
@@ -16,7 +20,7 @@
     height: 55px;
     border-radius: 100%;
     background-color: #fff;
-    border: .5px solid  rgb(231, 231, 231);
+    border: .2px solid  rgb(231, 231, 231);
     box-shadow: 5px 5px 5px #CCC;
     margin: auto;
     margin-block: 1rem;

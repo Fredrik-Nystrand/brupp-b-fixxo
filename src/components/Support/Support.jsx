@@ -25,7 +25,7 @@ const Support = () => {
         </div>
 
         <div className={`${styles.card} ${styles.center}`}>
-          <div className={`${styles.bg_img} ${styles.d_flex}`}>
+          <div className={`${styles.bg_img} ${styles.d_flex} `}>
             <img src={truck} alt="truck" />
           </div>
             <h3>Free Home Delivery</h3>
