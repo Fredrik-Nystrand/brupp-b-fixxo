@@ -11,23 +11,38 @@
     
 }
 .section {
-    margin-right: 4rem;
+    margin-left: 4rem;
 }
-.link {
+.links {
     list-style: none;
 }
-.link a {
+.links a {
     text-decoration: none;
     color: var(--dark-gray);
-    font-weight: 300;
-    
+    font-weight: 300;    
 }
+.links a:hover {
+    /* color: black; */
+    color: var(--primary);
+}
+
 .apps {
-    /* background-image: 'brupp-b-fixxo/src/components/Footer/img/app-store-badge.png'; */
-    width: 128px;
-    height: 40px;
-    border: 1px solid blue;
+    
+    /* border: 1px solid blue; */
 }
+.app {
+    margin-right: 2rem;
+}
+.socialmedia {
+    margin-top: 1.5rem;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;       
+}
+.socialmedia a {
+    color: var(--dark);   
+}
+
 .footerBottom {
     width: 100%;
     margin-top: 2rem;   
