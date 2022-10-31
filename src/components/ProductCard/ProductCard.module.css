@@ -1,7 +1,9 @@
 .wrapper {
+  max-width: 100%;
   max-height: 100%;
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .imgWrapper {
@@ -12,7 +14,7 @@
 }
 
 .imgHalf {
-  width: 40%;
+  max-width: 100px;
 }
 
 .imgFull {
@@ -27,10 +29,10 @@
 }
 
 .contentWrapper {
-  flex: 1;
   display: flex;
   flex-direction: column;
   margin-top: 0.5rem;
+  max-width: 60%;
 }
 
 .category {
@@ -42,7 +44,16 @@
 
 .name {
   display: flex;
+  justify-content: center;
   font-weight: 600;
+}
+
+.name span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  width: 100%;
 }
 
 .rating {

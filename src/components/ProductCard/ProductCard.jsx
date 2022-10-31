@@ -16,7 +16,7 @@ const ProductCard = ({ product, vertical = false, className }) => {
             {product.subCategory}
           </div>
           <div className={`${styles.name} ${vertical ? "flex-start" : "flex-center"}`}>
-            {product.name}
+            <span>{product.name}</span>
           </div>
           <div className={`${styles.rating} ${vertical ? "flex-start" : "flex-center"}`}>
             <Rating

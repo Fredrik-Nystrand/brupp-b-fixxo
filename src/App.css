@@ -166,6 +166,13 @@ body {
   display: flex;
 }
 
+.d-grid {
+  display: grid;
+  max-width: 100%;
+  gap: 1.3rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -188,4 +195,28 @@ body {
 
 .flex-between {
   justify-content: flex-between;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
 }

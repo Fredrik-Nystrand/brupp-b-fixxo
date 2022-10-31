@@ -8,7 +8,46 @@ function App() {
   return (
     <div className="container-outer">
       <div className="container-inner">
-        <ProductGrid products={fakeProducts} vertical={false} />
+        <ProductGrid
+          products={fakeProducts}
+          vertical={false}
+          numberOfItems={4}
+          numberOfColumns={4}
+          paginationStyle="big"
+          showPagination={true}
+        />
+        {/* <div className="d-grid">
+        <ProductGrid
+          products={fakeProducts}
+          vertical={true}
+          numberOfItems={3}
+          numberOfColumns={1}
+          title="Related Products"
+          titleAlign="left"
+          paginationStyle="big"
+          showPagination={false}
+        />
+        <ProductGrid
+          products={fakeProducts}
+          vertical={true}
+          numberOfItems={3}
+          numberOfColumns={1}
+          title="Related Products"
+          titleAlign="left"
+          paginationStyle="big"
+          showPagination={false}
+        />
+        <ProductGrid
+          products={fakeProducts}
+          vertical={true}
+          numberOfItems={3}
+          numberOfColumns={1}
+          title="Related Products"
+          titleAlign="left"
+          paginationStyle="big"
+          showPagination={false}
+        />
+      </div> */}
       </div>
     </div>
   )
