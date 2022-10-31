@@ -10,30 +10,6 @@
   gap: 1.3rem;
 }
 
-.col1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.col2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.col3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.colOverride1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.colOverride2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.colOverride3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .gridItem {
   max-width: 100%;
 }

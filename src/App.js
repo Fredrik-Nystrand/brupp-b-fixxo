@@ -11,10 +11,12 @@ function App() {
         <ProductGrid
           products={fakeProducts}
           vertical={false}
-          numberOfItems={4}
-          numberOfColumns={4}
+          numberOfItems={3}
+          numberOfColumns={3}
           paginationStyle="big"
           showPagination={true}
+          sorting={true}
+          filtering={true}
         />
         {/* <div className="d-grid">
         <ProductGrid
