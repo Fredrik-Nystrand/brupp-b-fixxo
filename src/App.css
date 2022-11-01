@@ -162,6 +162,30 @@ body {
   padding: 3rem;
 }
 
+.pb1 {
+  padding-block: 1rem;
+}
+
+.pb2 {
+  padding-block: 2rem;
+}
+
+.pb3 {
+  padding-block: 3rem;
+}
+
+.pi1 {
+  padding-inline: 1rem;
+}
+
+.pi2 {
+  padding-inline: 2rem;
+}
+
+.pi3 {
+  padding-inline: 3rem;
+}
+
 .d-flex {
   display: flex;
 }

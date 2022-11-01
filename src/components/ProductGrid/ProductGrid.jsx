@@ -13,8 +13,9 @@ const ProductGrid = ({
   titleAlign = "center",
   showPagination = true,
   paginationStyle = "big",
-  numberOfItems = 10,
+  numberOfItems = 6,
   numberOfColumns = 2,
+  sorting = true,
 }) => {
   const bp = useBreakpoint()
   const paginate = usePaginate()
@@ -26,21 +27,20 @@ const ProductGrid = ({
 
   useEffect(() => {
     paginate.setArrayToPaginate(sortedProducts)
-    console.log("test")
   }, [sortedProducts])
 
   function handleFilter(e) {
     switch (e.target.value) {
       case "6": {
-        paginate.setItemsPerPage(10)
+        paginate.setItemsPerPage(6)
         break
       }
       case "12": {
-        paginate.setItemsPerPage(15)
+        paginate.setItemsPerPage(12)
         break
       }
       case "24": {
-        paginate.setItemsPerPage(20)
+        paginate.setItemsPerPage(24)
         break
       }
       case "all": {
@@ -55,7 +55,6 @@ const ProductGrid = ({
   function handleSorting(e) {
     switch (e.target.value) {
       case "mostPopular": {
-        console.log(e.target.value)
         setSortedProducts((state) => sortArrayOfObjects("rating", state, "DESC"))
         break
       }
@@ -94,26 +93,30 @@ const ProductGrid = ({
           </div>
         )}
       </div>
-      <div className={`${styles.filterWrapper}`}>
-        <form className={`${styles.sortingForm}`}>
-          <label>Show:</label>
-          <select onChange={handleSorting}>
-            <option value="mostPopular">Most Popular</option>
-            <option value="leastPopular">Least Popular</option>
-            <option value="priceLow">Price (Low)</option>
-            <option value="priceHigh">Price (High)</option>
-          </select>
-        </form>
-        <form className={`${styles.pageCountForm}`}>
-          <label>Show:</label>
-          <select defaultValue="6">
-            <option value="6">06</option>
-            <option value="12">12</option>
-            <option value="24">24</option>
-            <option value="all">All</option>
-          </select>
-        </form>
-      </div>
+      {sorting && (
+        <div
+          className={`${styles.filterWrapper} ${
+            bp.lessThan("sm") ? "pi1" : bp.lessThan("lg") && "pi2"
+          }`}>
+          <div className={`${styles.select}`}>
+            <select onChange={handleSorting}>
+              <option value="mostPopular">Most Popular</option>
+              <option value="leastPopular">Least Popular</option>
+              <option value="priceLow">Price (Low)</option>
+              <option value="priceHigh">Price (High)</option>
+            </select>
+          </div>
+          <div className={`${styles.select}`}>
+            <label>Show:</label>
+            <select defaultValue="6" onChange={handleFilter}>
+              <option value="6">06</option>
+              <option value="12">12</option>
+              <option value="24">24</option>
+              <option value="all">All</option>
+            </select>
+          </div>
+        </div>
+      )}
       <div
         className={`${styles.grid} ${bp.lessThan("sm") ? "p1" : bp.lessThan("lg") && "p2"}
         `}

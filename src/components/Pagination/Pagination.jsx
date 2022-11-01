@@ -25,7 +25,7 @@ const Pagination = ({
             pageNumber={index.toString().length === 1 ? "0" + index : index}
             key={index}
             active={index === paginationHook.getCurrentPage()}
-            onClick={() => paginationHook.setCurrentPage(index)}></PaginationButton>,
+            onClick={() => goToPage(index)}></PaginationButton>,
         ])
       }
     }
@@ -36,27 +36,34 @@ const Pagination = ({
     paginationHook,
   ])
 
+  const goToPage = (page) => {
+    paginationHook.setCurrentPage(page)
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  const prev = () => {
+    paginationHook.previousPage()
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  const next = () => {
+    paginationHook.nextPage()
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
   return (
     <>
       {showPagination && variation === "big" && (
         <div className={`${styles.wrapper} ${styles[variation]} ${className}`}>
-          <PaginationButton type="prev" onClick={() => paginationHook.previousPage()} />
+          <PaginationButton type="prev" onClick={() => prev()} />
           {paginationElements}
-          <PaginationButton type="next" onClick={() => paginationHook.nextPage()} />
+          <PaginationButton type="next" onClick={() => next()} />
         </div>
       )}
       {showPagination && variation === "small" && (
         <div className={`${styles.wrapper} ${styles[variation]} ${className}`}>
-          <PaginationButton
-            type="prev"
-            variation={variation}
-            onClick={() => paginationHook.previousPage()}
-          />
-          <PaginationButton
-            type="next"
-            variation={variation}
-            onClick={() => paginationHook.nextPage()}
-          />
+          <PaginationButton type="prev" variation={variation} onClick={() => prev()} />
+          <PaginationButton type="next" variation={variation} onClick={() => next()} />
         </div>
       )}
     </>

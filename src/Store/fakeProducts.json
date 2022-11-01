@@ -76,5 +76,83 @@
     "brand": "H&M",
     "rating": 4.3,
     "imgUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe0%2F46%2Fe046ca042b56116acb94c332bd1fa00e922c0ca1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]"
+  },
+  {
+    "id": "007",
+    "name": "Oversized polotröja",
+    "category": "Dam",
+    "subCategory": "Tröjor",
+    "price": "199",
+    "salePrice": "",
+    "colors": ["svart", "ljusblå", "beige", "cremévit"],
+    "sizes": ["xs", "s", "m", "l", "xl", "xxl"],
+    "brand": "H&M",
+    "rating": 4.3,
+    "imgUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe0%2F46%2Fe046ca042b56116acb94c332bd1fa00e922c0ca1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]"
+  },
+  {
+    "id": "008",
+    "name": "Oversized polotröja",
+    "category": "Dam",
+    "subCategory": "Tröjor",
+    "price": "199",
+    "salePrice": "",
+    "colors": ["svart", "ljusblå", "beige", "cremévit"],
+    "sizes": ["xs", "s", "m", "l", "xl", "xxl"],
+    "brand": "H&M",
+    "rating": 4.3,
+    "imgUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe0%2F46%2Fe046ca042b56116acb94c332bd1fa00e922c0ca1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]"
+  },
+  {
+    "id": "009",
+    "name": "Oversized polotröja",
+    "category": "Dam",
+    "subCategory": "Tröjor",
+    "price": "199",
+    "salePrice": "",
+    "colors": ["svart", "ljusblå", "beige", "cremévit"],
+    "sizes": ["xs", "s", "m", "l", "xl", "xxl"],
+    "brand": "H&M",
+    "rating": 4.3,
+    "imgUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe0%2F46%2Fe046ca042b56116acb94c332bd1fa00e922c0ca1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]"
+  },
+  {
+    "id": "010",
+    "name": "Oversized polotröja",
+    "category": "Dam",
+    "subCategory": "Tröjor",
+    "price": "199",
+    "salePrice": "",
+    "colors": ["svart", "ljusblå", "beige", "cremévit"],
+    "sizes": ["xs", "s", "m", "l", "xl", "xxl"],
+    "brand": "H&M",
+    "rating": 4.3,
+    "imgUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe0%2F46%2Fe046ca042b56116acb94c332bd1fa00e922c0ca1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]"
+  },
+  {
+    "id": "011",
+    "name": "Oversized polotröja",
+    "category": "Dam",
+    "subCategory": "Tröjor",
+    "price": "199",
+    "salePrice": "",
+    "colors": ["svart", "ljusblå", "beige", "cremévit"],
+    "sizes": ["xs", "s", "m", "l", "xl", "xxl"],
+    "brand": "H&M",
+    "rating": 4.3,
+    "imgUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe0%2F46%2Fe046ca042b56116acb94c332bd1fa00e922c0ca1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]"
+  },
+  {
+    "id": "012",
+    "name": "Oversized polotröja",
+    "category": "Dam",
+    "subCategory": "Tröjor",
+    "price": "199",
+    "salePrice": "",
+    "colors": ["svart", "ljusblå", "beige", "cremévit"],
+    "sizes": ["xs", "s", "m", "l", "xl", "xxl"],
+    "brand": "H&M",
+    "rating": 4.3,
+    "imgUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe0%2F46%2Fe046ca042b56116acb94c332bd1fa00e922c0ca1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]"
   }
 ]
