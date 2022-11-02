@@ -16,7 +16,7 @@ const Hero = () => {
               <h1>Don't Miss This Opportunity</h1>
               <p>Online shopping free home delivery over $100</p>
               <ButtonMain
-              className={`${styles.padding_0}`}
+              className={`${styles.p0}`}
                text="Shop Now"
                align = "left"
                onClick={() => console.log("test")}
