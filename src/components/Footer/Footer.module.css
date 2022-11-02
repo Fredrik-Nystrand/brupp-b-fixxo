@@ -11,10 +11,11 @@
     
 }
 .section {
-    margin-left: 4rem;
+    margin-left: 3rem;
 }
 .links {
     list-style: none;
+    margin-top: 0;
 }
 .links a {
     text-decoration: none;
@@ -26,10 +27,6 @@
     color: var(--primary);
 }
 
-.apps {
-    
-    /* border: 1px solid blue; */
-}
 .app {
     margin-right: 2rem;
 }

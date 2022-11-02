@@ -3,7 +3,7 @@ import styles from './Footer.module.css'
 import appstore from '/Users/danielkarlsson/Dropbox/Mac/Documents/EC-Frontend/Backend/Gruppuppgift/brupp-b-fixxo/src/components/Footer/img/app-store-badge.png'
 import googlePlay from '/Users/danielkarlsson/Dropbox/Mac/Documents/EC-Frontend/Backend/Gruppuppgift/brupp-b-fixxo/src/components/Footer/img/google-play-badge.png'
 import {FaFacebookF, FaInstagram, FaTwitter, FaGoogle, FaLinkedin} from 'react-icons/fa'
-
+import useBreakpoint from '../../shared/hooks/useBreakpoint'
 
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
           </ul>
         </section>
 
-        <section className={`${styles.section}`}>
+        <section className={`${styles.section} `}>
           <h5>Macys' Credit Card</h5>
           <ul className={`${styles.links}`}>
             <li className=''><a href="#">Macys's Card Services</a></li>
