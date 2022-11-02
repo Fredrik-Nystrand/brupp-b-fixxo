@@ -1,10 +1,12 @@
-import "./App.css"
+import './App.css';
+import Footer from './components/Footer/Footer'
+import Hero from './components/Hero/Hero';
 import ButtonMain from "./components/ButtonMain/ButtonMain"
-import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
     <div className="container-outer">
+      <Hero/>
       <div className="container-inner">
         <ButtonMain
           variant="dark"
@@ -14,7 +16,7 @@ function App() {
         />
       </div>
     </div>
-  )
+  );
 }
 
 export default App
