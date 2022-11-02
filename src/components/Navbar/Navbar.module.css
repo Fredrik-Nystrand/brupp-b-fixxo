@@ -1,3 +1,126 @@
+
+
 .navbar {
-    background-color: #c0c0c0;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    list-style: none;
 }
+.logo{
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 1rem 2rem;
+}
+
+ .dflex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+ }   
+
+.navlinks_left{
+    margin: .5rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navlinks_right{
+    
+    margin: .5rem 4rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.links{
+    font-size: .9rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.links:hover{
+    cursor: pointer;
+    color: rgba(250, 55, 21, 0.734);
+}
+
+/* Search Button */
+
+.search_box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+
+}
+
+.input_search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: white;
+    padding-right: 40px;
+    color:rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+  }
+  .input_search::placeholder{
+    color:rgba(0, 0, 0, 0.5);
+    font-size: .7rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+  .btn_search{
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.134);
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: transparent;
+    pointer-events: painted;
+
+  }
+  .fa_search{
+    height: .9rem;
+    color: rgb(29, 29, 29);
+    
+
+  }
+  .btn_search:focus ~ .input_search{
+    width: 200px;
+    height: 2rem;
+    font-size: .8rem;
+    font-weight: 500;
+    border-radius: 50px;
+    background-color: rgba(199, 199, 199, 0.045);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+    transition: all 500ms cubic-bezier(0.110, 0.35, 2);
+  }
+  .input_search:focus {
+    font-display:inherit ;
+    font-size: .8rem;
+    height: 2rem;
+    font-weight: 500;
+    width: 200px;
+    border: radius 0px;
+    background-color: rgba(199, 199, 199, 0.045);
+    border: 1px solid rgba(29, 28, 28, 0.194);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+
+/*  Search Button end */
