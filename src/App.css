@@ -162,8 +162,39 @@ body {
   padding: 3rem;
 }
 
+.pb1 {
+  padding-block: 1rem;
+}
+
+.pb2 {
+  padding-block: 2rem;
+}
+
+.pb3 {
+  padding-block: 3rem;
+}
+
+.pi1 {
+  padding-inline: 1rem;
+}
+
+.pi2 {
+  padding-inline: 2rem;
+}
+
+.pi3 {
+  padding-inline: 3rem;
+}
+
 .d-flex {
   display: flex;
+}
+
+.d-grid {
+  display: grid;
+  max-width: 100%;
+  gap: 1.3rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
 }
 
 .flex-row {
@@ -188,4 +219,28 @@ body {
 
 .flex-between {
   justify-content: flex-between;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
 }
