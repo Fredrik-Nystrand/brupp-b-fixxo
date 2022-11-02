@@ -16,38 +16,6 @@ function App() {
           showPagination={true}
           sorting={true}
         />
-        {/* <div className="d-grid">
-        <ProductGrid
-          products={fakeProducts}
-          vertical={true}
-          numberOfItems={3}
-          numberOfColumns={1}
-          title="Related Products"
-          titleAlign="left"
-          paginationStyle="big"
-          showPagination={false}
-        />
-        <ProductGrid
-          products={fakeProducts}
-          vertical={true}
-          numberOfItems={3}
-          numberOfColumns={1}
-          title="Related Products"
-          titleAlign="left"
-          paginationStyle="big"
-          showPagination={false}
-        />
-        <ProductGrid
-          products={fakeProducts}
-          vertical={true}
-          numberOfItems={3}
-          numberOfColumns={1}
-          title="Related Products"
-          titleAlign="left"
-          paginationStyle="big"
-          showPagination={false}
-        />
-      </div> */}
       </div>
     </div>
   )
