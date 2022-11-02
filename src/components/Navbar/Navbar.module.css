@@ -37,8 +37,13 @@
     align-items: center;
 
 }
-
-
+.links a{
+  text-decoration: none;
+}
+.links a:visited{
+  
+  color: inherit;
+}
 
 .links{
     font-size: 1.2rem;

@@ -9,11 +9,10 @@ const Navbar = () => {
       <div className={`${styles.dflex}`}>
           <div className={`${styles.navlinks_left}`}>
             <h2 className={`${styles.logo}`}>Fixxo.</h2>
-              <li className={`${styles.links}`}>Home</li>
+              <li className={`${styles.links}`}><a href='#'>Home</a></li>
               <li className={`${styles.links}`}>Categories</li>
               <li className={`${styles.links}`}>Products</li>
-              <li className={`${styles.links}`}>Pages</li>
-              <li className={`${styles.links}`}>Blog</li>
+              
         </div>
         <div className={`${styles.navlinks_right}`}>
           <li className={`${styles.links}`}>Login</li>
