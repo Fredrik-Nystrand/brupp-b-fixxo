@@ -1,44 +1,46 @@
-.d_flex{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
+.d_flex {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
 }
 
 .aling-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .center {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .bg_img {
-    width: 55px;
-    height: 55px;
-    border-radius: 100%;
-    background-color: #fff;
-    border: .2px solid  rgb(231, 231, 231);
-    box-shadow: 5px 5px 5px #CCC;
-    margin: auto;
-    margin-block: 1rem;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 0.2px solid rgb(231, 231, 231);
+  box-shadow: 5px 5px 5px #ccc;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 .grid {
-    display: grid;
-    width: 100%;
-    margin: 0 auto;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: grid;
+  width: 100%;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border-top: 1px solid var(--mid-gray);
+  border-bottom: 1px solid var(--mid-gray);
+  padding-block: 3rem;
 }
 
 .card h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-.card p{
-    font-size: 16px;
-    color: var(--dark-gray);
+.card p {
+  font-size: 16px;
+  color: var(--dark-gray);
 }

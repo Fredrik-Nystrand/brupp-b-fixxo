@@ -16,6 +16,7 @@ const ProductGrid = ({
   numberOfItems = 6,
   numberOfColumns = 2,
   sorting = true,
+  className,
 }) => {
   const bp = useBreakpoint()
   const paginate = usePaginate()
@@ -76,7 +77,7 @@ const ProductGrid = ({
   }
 
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${className}`}>
       <div
         className={`${
           titleAlign === "left" ? "flex-start" : titleAlign === "right" ? "flex-end" : "flex-center"
