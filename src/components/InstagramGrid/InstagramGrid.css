@@ -1,0 +1,13 @@
+.instagram-container {
+  width: 60%;
+  margin: auto;
+}
+.instagram-header {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 198px);
+  gap: 2rem;
+}
