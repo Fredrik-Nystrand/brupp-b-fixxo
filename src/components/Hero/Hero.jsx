@@ -5,7 +5,7 @@ import ButtonMain from '../ButtonMain/ButtonMain'
 import useBreakpoint from '../../shared/hooks/useBreakpoint'
 
 const Hero = () => {
-  const br = useBreakpoint();
+  const bp = useBreakpoint();
 
   return (
   <header className={`${styles.hero_bg}`}>
@@ -24,7 +24,7 @@ const Hero = () => {
             </div>
 
 
-            {br.moreThan("lg") && <div className={`${styles.img}`}>
+            {bp.moreThan("lg") && <div className={`${styles.img}`}>
               <img src={hero} alt="girl holding a hat"/>
             </div>}
 
