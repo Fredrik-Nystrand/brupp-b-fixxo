@@ -11,6 +11,9 @@ const StylesOffer = () => {
       <div className={`${styles.gridContainer}`}>
         <div className={`${styles.OfficeStyle}`}>
           <img src={OfficeStyle} alt="" />
+          <div className={`${styles.Officetext}`}> Office Style </div>
+          <div className={`${styles.OfficetextBtn}`}>Shop now</div>
+
         </div>
       <div className={`${styles.Fifty}`}>
         <div className={`${styles.FiftyContainer}`}>

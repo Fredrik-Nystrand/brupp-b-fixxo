@@ -10,7 +10,6 @@ function App() {
       <div className="container-inner"></div>
         <Navbar /> 
         <StylesOffer/>
-        <Footer />
     </div>
   )
 }

@@ -33,7 +33,23 @@
     align-items: center;
     flex-direction: column;  
 }
-
+.OfficeStyle{
+    display: inline;
+    position: relative;
+    text-align: center;
+}
+.OfficeStyle .Officetext{
+    position: absolute;
+    top: 4rem;
+    left: 13.5rem;
+    font-size: 1.5rem;
+}
+.OfficeStyle .OfficetextBtn{
+    position: absolute;
+    top: 9rem;
+    left: 15rem;
+    font-size: .8rem;
+}
 
 .OfficeStyle img{
     
