@@ -1,30 +1,44 @@
-
-.flex-row{
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
 .gridContainer{
-    width: 100%;
-    background-color: aqua;
     display: grid;
-    grid-template-columns: auto auto auto;
+    gap: 1rem 1rem 1rem 1rem;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     margin-top: 10rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 2rem;
+    
 }
+.Fifty h2{
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
 .Fifty{
-    width: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    outline: 1rem solid rgba(212, 212, 212, 0.521);
+    border: .5rem solid rgb(246, 86, 86);
+    text-align: center;
+    height: 90%;
+    background-color: rgba(212, 212, 212, 0.521);
+    
+ 
 }
 .FiftyContainer{
+    
+    margin: 1rem 1rem 1rem 1rem;
+    text-align: center;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: column;  
 }
 
 
-.item2{
-
+.OfficeStyle img{
+    
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

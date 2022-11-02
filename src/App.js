@@ -7,18 +7,10 @@ import StylesOffer from "./components/StylesOffer/StylesOffer"
 function App() {
   return (
     <div className="container-outer">
-
-      <div className="container-inner">
+      <div className="container-inner"></div>
         <Navbar /> 
         <StylesOffer/>
         <Footer />
-        <ButtonMain
-          variant="dark"
-          border={true}
-          text="action"
-          onClick={() => console.log("test")}
-        />
-      </div>
     </div>
   )
 }
