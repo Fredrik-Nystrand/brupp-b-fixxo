@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  aspect-ratio: 1;
+  background-color: var(--light-gray);
+  border-radius: 50%;
+  color: var(--dark-gray);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.wrapper:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.active {
+  background-color: var(--primary);
+  color: white;
+}
+
+.arrow {
+  font-size: 1.5rem;
+}
+
+.small {
+  width: 1.2rem;
+  background-color: white;
+  color: var(--dark);
+  box-shadow: 0 0 5px var(--mid-gray);
+}
+
+.small .arrow {
+  font-size: 1.1rem;
+}

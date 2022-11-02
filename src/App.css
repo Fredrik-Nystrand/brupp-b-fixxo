@@ -1,29 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
-    --dark-gray: #616365;
-    --mid-gray: #BEBEBE;
-    --light-gray: #F5F5F5;
-    --primary: #FF7373;
-    --dark: #23262A;
+  --dark-gray: #616365;
+  --mid-gray: #bebebe;
+  --light-gray: #f5f5f5;
+  --primary: #ff7373;
+  --dark: #23262a;
 }
-
 
 /* Box sizing rules */
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 /* Remove default padding */
 
 ul[class],
 ol[class] {
-    padding: 0;
+  padding: 0;
 }
-
 
 /* Remove default margin */
 
@@ -41,49 +38,43 @@ figcaption,
 blockquote,
 dl,
 dd {
-    margin: 0;
+  margin: 0;
 }
-
 
 /* Set core body defaults */
 
 body {
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
-
 
 /* Remove list styles on ul, ol elements with a class attribute */
 
 ul[class],
 ol[class] {
-    list-style: none;
+  list-style: none;
 }
-
 
 /* A elements that don't have a class get default styles */
 
 a:not([class]) {
-    text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
-
 
 /* Make images easier to work with */
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
-
 
 /* Natural flow and rhythm in articles by default */
 
-article>*+* {
-    margin-top: 1em;
+article > * + * {
+  margin-top: 1em;
 }
-
 
 /* Inherit fonts for inputs and buttons */
 
@@ -91,72 +82,165 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
-
 
 /* Remove all animations and transitions for people that prefer not to see them */
 
 @media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
-
 
 /* ================================================================================================================= */
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--dark);
-    font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark);
+  font-size: 1rem;
 }
 
 .btn {
-    font-size: 1rem;
-    font-weight: medium;
-    padding-inline: 2.5rem;
-    padding-block: 1.5rem;
+  font-size: 1rem;
+  font-weight: medium;
+  padding-inline: 2.5rem;
+  padding-block: 1.5rem;
 }
 
 .btn-primary {
-    background-color: var(--primary);
-    color: white;
+  background-color: var(--primary);
+  color: white;
 }
 
 .btn-light {
-    background-color: white;
-    color: var(--dark);
+  background-color: white;
+  color: var(--dark);
 }
 
 .btn-dark {
-    background-color: var(--dark);
-    color: white;
+  background-color: var(--dark);
+  color: white;
 }
 
 .container-outer {
-    margin: 0 auto;
-    max-width: 120rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 0 auto;
+  max-width: 120rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-inner {
-    max-width: 69.375rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+  max-width: 69.375rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .container-row {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.p1 {
+  padding: 1rem;
+}
+
+.p2 {
+  padding: 2rem;
+}
+
+.p3 {
+  padding: 3rem;
+}
+
+.pb1 {
+  padding-block: 1rem;
+}
+
+.pb2 {
+  padding-block: 2rem;
+}
+
+.pb3 {
+  padding-block: 3rem;
+}
+
+.pi1 {
+  padding-inline: 1rem;
+}
+
+.pi2 {
+  padding-inline: 2rem;
+}
+
+.pi3 {
+  padding-inline: 3rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+  max-width: 100%;
+  gap: 1.3rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: flex-between;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
 }
