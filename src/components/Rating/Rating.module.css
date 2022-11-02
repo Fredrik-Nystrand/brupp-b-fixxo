@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 1.2rem;
+}
+
+.starsBackground {
+  position: absolute;
+  color: var(--mid-gray);
+}
+
+.foregroundWrapper {
+  position: absolute;
+}
+
+.starsForeground {
+  color: var(--primary);
+  width: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+}

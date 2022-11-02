@@ -1,0 +1,74 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.grid {
+  max-width: 100%;
+  display: grid;
+  gap: 1.3rem;
+}
+
+.gridItem {
+  max-width: 100%;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  padding-block: 1rem;
+  position: relative;
+}
+
+.titlePagination {
+  position: absolute;
+  right: 0px;
+}
+
+.filterWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.3rem;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.select label {
+  color: var(--dark-gray);
+  font-size: 0.8rem;
+}
+
+.select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  border: 1px solid var(--dark);
+  border-radius: 0px;
+  color: var(--dark-gray);
+  font-size: 0.8rem;
+}
+
+.select select:focus {
+  border: 1px solid var(--dark);
+  border-radius: 0px;
+  outline: 1px solid var(--dark);
+}
+
+.select:after {
+  position: absolute;
+  content: "<";
+  transform: rotate(-90deg);
+  font-size: 1rem;
+  color: var(--dark-gray);
+  right: 1rem;
+  top: 0.4rem;
+  z-index: 1;
+  pointer-events: none;
+}
