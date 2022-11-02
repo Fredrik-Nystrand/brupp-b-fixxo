@@ -1,9 +1,3 @@
-.display_none {
-    display: none;
-}
-.display_show {
-    display: block;
-}
 .hero_bg {
     background-color: #F4F4F4;
 }
@@ -33,4 +27,8 @@
 }
 .text_group p {
     padding-block: 1rem;
+}
+
+.padding_0 {
+    padding: 0;
 }

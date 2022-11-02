@@ -16,15 +16,17 @@ const Hero = () => {
               <h1>Don't Miss This Opportunity</h1>
               <p>Online shopping free home delivery over $100</p>
               <ButtonMain
+              className={`${styles.padding_0}`}
                text="Shop Now"
                align = "left"
                onClick={() => console.log("test")}
               />
             </div>
 
-            <div className={`${styles.img}`}>
-              <img src={hero} alt="girl holding a hat" className={br.lessThan("md") ? 'display_none' : 'display_show'} />
-            </div>
+
+            {br.moreThan("lg") && <div className={`${styles.img}`}>
+              <img src={hero} alt="girl holding a hat"/>
+            </div>}
 
         </div>
     </header>
