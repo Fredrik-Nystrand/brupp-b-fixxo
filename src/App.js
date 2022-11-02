@@ -17,8 +17,9 @@ function App() {
           onClick={() => console.log("test")}
         />
       </div>
+        <Footer />
     </div>
   );
 }
 
-export default App
+export default App;
