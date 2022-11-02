@@ -4,10 +4,14 @@ import ButtonMain from "./components/ButtonMain/ButtonMain"
 import Footer from "./components/Footer/Footer"
 import ProductGrid from "./components/ProductGrid/ProductGrid"
 import fakeProducts from "./Store/fakeProducts.json"
+import Hero from './components/Hero/Hero';
+import Support from './components/Support/Support';
+
 
 function App() {
   return (
     <div className="container-outer">
+      <Hero/>
       <div className="container-inner">
         <ProductGrid
           products={fakeProducts}
@@ -17,7 +21,7 @@ function App() {
           showPagination={true}
           sorting={true}
         />
-
+      <Support/>
         <ButtonMain
           variant="dark"
           border={true}
@@ -25,8 +29,9 @@ function App() {
           onClick={() => console.log("test")}
         />
       </div>
+        <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
