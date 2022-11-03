@@ -7,6 +7,7 @@ import ProductGrid from "./components/ProductGrid/ProductGrid"
 import fakeProducts from "./Store/fakeProducts.json"
 import Hero from "./components/Hero/Hero"
 import Support from "./components/Support/Support"
+import Categories from "./components/Categories/Categories"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="container-outer">
         <Navbar />
         <Hero />
+        <Categories />
         <div className="container-inner">
           <ProductGrid
             products={fakeProducts}
