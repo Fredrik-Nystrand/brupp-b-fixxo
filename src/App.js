@@ -10,12 +10,15 @@ import Support from "./components/Support/Support"
 import Popup from "./components/Popup/Popup"
 
 function App() {
+
+  const [close, setClose] = useState(false)
+
   return (
     <div className="wrapper">
+        {close || <Popup setClose={setClose}/>}
       <div className="container-outer">
         <Navbar />
         <Hero />
-        <Popup />
         <div className="container-inner">
           <ProductGrid
             products={fakeProducts}
