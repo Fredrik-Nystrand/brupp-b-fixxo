@@ -24,7 +24,7 @@ const StylesOffer = () => {
           <ButtonMain border="light" text='Flase Sale' variant='light' weight='' />
         </div>
       </div>
-      <div className={`${styles.OfficeStyle}`}>
+      <div className={`${styles.PartyStyle}`}>
         <img src={PartyStyle} alt="" />
       </div>
 
