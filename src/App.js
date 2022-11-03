@@ -3,28 +3,11 @@ import { useEffect, useState } from "react"
 import Navbar from "./components/Navbar/Navbar"
 import ButtonMain from "./components/ButtonMain/ButtonMain"
 import Footer from "./components/Footer/Footer"
-<<<<<<< HEAD
-import InstagramGrid from "./components/InstagramGrid/InstagramGrid"
-
-function App() {
-  return (
-    // <div className="container-outer">
-    //   <div className="container-inner">
-    //     <ButtonMain
-    //       variant="dark"
-    //       border={true}
-    //       text="action"
-    //       onClick={() => console.log("test")}
-    //     />
-    //   </div>
-    // </div>
-    <div>
-      <InstagramGrid />
-=======
 import ProductGrid from "./components/ProductGrid/ProductGrid"
 import fakeProducts from "./Store/fakeProducts.json"
 import Hero from "./components/Hero/Hero"
 import Support from "./components/Support/Support"
+import InstagramGrid from "./components/InstagramGrid/InstagramGrid"
 
 function App() {
   return (
@@ -77,12 +60,13 @@ function App() {
               sorting={false}
             />
           </div>
-
           <Support className={`mt-4 mb-4`} />
+
+          <InstagramGrid />
+
         </div>
         <Footer />
       </div>
->>>>>>> f76749e59bb974020cc0ca93e3523366de36dba7
     </div>
   )
 }

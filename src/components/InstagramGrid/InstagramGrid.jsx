@@ -1,14 +1,14 @@
 import React from 'react'
 import InstagramCard from '../InstagramCard/InstagramCard'
 import InstagramPopup from '../InstagramPopup/InstagramPopup'
-import './InstagramGrid.css'
+import styles from './InstagramGrid.module.css'
 
 
 const Instagram = () => {
   return (
-    <div className='instagram-container'>
-      <h3 className='instagram-header'>Our instagram</h3>
-      <div className='instagram-grid'>
+    <div className={`${styles.instagram_wrapper}`}>
+      <h3 className={`${styles.instagram_header}`}>Our instagram</h3>
+      <div className={`${styles.instagram_grid}`}>
         <InstagramCard />
         <InstagramCard />
         <InstagramCard />
@@ -19,9 +19,11 @@ const Instagram = () => {
         <InstagramCard />
         <InstagramCard />
         <InstagramCard />
-      </div>
-      <div className='instagram-cta'>
-        <InstagramPopup />
+
+        <div className={`${styles.instagram_popup_wrapper}`}>
+          <InstagramPopup />
+        </div>
+        
       </div>
     
     

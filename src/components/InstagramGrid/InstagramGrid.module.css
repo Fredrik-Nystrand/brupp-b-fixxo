@@ -1,0 +1,23 @@
+.instagram_wrapper {
+  width: 100%;
+}
+.instagram_header {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.instagram_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
+  gap: 2rem;
+  position: relative;
+}
+.instagram_popup_wrapper {
+  width: 100%;
+  max-width: 286px;
+  /* max-height: 248px; */
+  position: absolute;
+  top: calc(50% - 124px);
+  left: calc(50% - 143px);
+  z-index: 1000;
+
+} 
