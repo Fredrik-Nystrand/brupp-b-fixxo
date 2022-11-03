@@ -7,6 +7,7 @@ import ProductGrid from "./components/ProductGrid/ProductGrid"
 import fakeProducts from "./Store/fakeProducts.json"
 import Hero from "./components/Hero/Hero"
 import Support from "./components/Support/Support"
+import Popup from "./components/Popup/Popup"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="container-outer">
         <Navbar />
         <Hero />
+        <Popup />
         <div className="container-inner">
           <ProductGrid
             products={fakeProducts}
