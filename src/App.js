@@ -29,7 +29,9 @@ function App() {
             sorting={false}
             className={`mt-4 mb-4`}
           />
-          <StylesOffer />
+        </div>
+        <StylesOffer />
+        <div className="container-inner">
           <div className="d-flex gap-2 mt-2 mb-2">
             <ProductGrid
               products={fakeProducts}
