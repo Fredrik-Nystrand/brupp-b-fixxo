@@ -29,7 +29,7 @@ function Popup({setClose}) {
                     <p>Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an. Use off agreeable law unwilling sir deficient curiosity instantly. Easy mind life fact with see has bore ten any chatty.</p>
                 </div>     
                 <input className={`${styles.input} mt-2 mb-1`} type="text" placeholder='Enter Your Email' />          
-                    <ButtonMain 
+                    <ButtonMain
                     text="sign up now"
                     onClick={() => console.log("sign up now")}
                     />
