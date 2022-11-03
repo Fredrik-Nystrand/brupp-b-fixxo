@@ -1,11 +1,11 @@
 .gridContainer{
     display: grid;
     gap: 1rem 1rem 1rem 1rem;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    margin-top: 10rem;
+    margin-top: 2rem;
     justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
+    width: 100%;
     
 }
 .Fifty h2{
@@ -22,9 +22,10 @@
     text-align: center;
     height: 90%;
     background-color: rgba(212, 212, 212, 0.521);
-    
- 
 }
+
+
+
 .FiftyContainer{
     
     margin: 1rem 1rem 1rem 1rem;
@@ -37,34 +38,105 @@
     display: inline;
     position: relative;
     text-align: center;
+    height: 100%;
+    object-fit: cover;
 }
-.OfficeStyle .Officetext{
+
+.OfficeContainer{
     position: absolute;
-    top: 4rem;
-    left: 13.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    align-items: flex-end;
+}
+
+.Officetext{
+    padding-right:1.5rem ;
+    display: flex;
+    font-weight: bold;
+    white-space: wrap;
+}
+.Officetext_LG{
+    font-size: 2rem;
+}
+.Officetext_SM{
     font-size: 1.5rem;
 }
-.OfficeStyle .OfficetextBtn{
-    position: absolute;
-    top: 9rem;
-    left: 15rem;
-    font-size: .8rem;
+.OfficetextBtn{
+    padding-right: 2rem ;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.OfficetextBtn_SM{
+    Font-size: 1.3rem;
+}
+.OfficetextBtn_LG{
+    font-size: 1.6rem;
 }
 
 .OfficeStyle img{
-    width: 500px;
-    height: 300px;
+    display: block;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
 }
 .PartyStyle{
     display: inline;
     position: relative;
-    text-align: center;
+    height: 100%;
+    object-fit: cover;
+}
+.PartyContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    align-items: flex-start;
 }
 .PartyStyle img {
-    width: 500px;
-    height: 300px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.Partytext{
+    display: flex;
+    font-weight: bold;
+    padding-left:1rem ;
+
+}
+.PartytextBtn{
+    padding-left:1rem ;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.Partytext_LG{
+    font-size: 2rem;
+}
+.Partytext_SM{
+    font-size: 1.6rem
+}
+
+.PartytextBtn_LG{
+    font-size: 1.5rem;
+}
+.PartytextBtn_SM{
+    font-size: 1.3rem;
 }
