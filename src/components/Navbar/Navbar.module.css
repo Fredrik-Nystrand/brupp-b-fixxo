@@ -17,6 +17,13 @@
   align-items: center;
   justify-content: space-between;
 }
+.links a{
+  text-decoration: none;
+}
+.links a:visited{
+  
+  color: inherit;
+}
 
 .navlinks_left {
   margin: 0.5rem;
@@ -45,6 +52,32 @@
   cursor: pointer;
   color: rgba(250, 55, 21, 0.734);
 }
+
+.btn_bag{
+  margin-left: 2rem;
+  padding: .6rem;
+  border-style: none;
+  font-size: 10px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.087);
+  border-radius: 50%;
+  color: black;
+  background-color: transparent;
+  pointer-events: painted;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.bi_bag{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.bi_bag:hover{
+  color: rgba(250, 55, 21, 0.734);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 
 /* Search Button */
 
