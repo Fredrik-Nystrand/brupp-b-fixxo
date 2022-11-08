@@ -13,8 +13,6 @@ import electric from '../../assets/Categories/electric.jpeg'
 const Categories = () => {
     const bp = useBreakpoint();
 
-
-
   return (
 
         <div className={`${styles.grid} p1`} 
