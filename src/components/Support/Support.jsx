@@ -16,7 +16,7 @@ const Support = () => {
       ? `repeat(4, minmax(0, 1fr))`
       : `repeat(2, minmax(0, 1fr))`
     }}>
-      <div className={`${styles.card} ${styles.center}`}>
+      <div className={`${styles.card} ${styles.center}  ${bp.lessThan("md") ? styles.p1 : ``}`}>
         <div className={`${styles.bg_img} ${styles.d_flex}`}>
           <img src={support} alt="customer-service" />
         </div>
@@ -24,7 +24,7 @@ const Support = () => {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, temporibus.</p>
       </div>
 
-      <div className={`${styles.card} ${styles.center}`}>
+      <div className={`${styles.card} ${styles.center} ${bp.lessThan("md") ? styles.p1 : ``}`}>
         <div className={`${styles.bg_img} ${styles.d_flex}`}>
           <img src={payment} alt="credit-card" />
         </div>
@@ -32,7 +32,7 @@ const Support = () => {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, temporibus.</p>
       </div>
 
-      <div className={`${styles.card} ${styles.center}`}>
+      <div className={`${styles.card} ${styles.center} ${bp.lessThan("md") ? styles.p1 : ``}`}>
         <div className={`${styles.bg_img} ${styles.d_flex} `}>
           <img src={truck} alt="truck" />
         </div>
@@ -40,7 +40,7 @@ const Support = () => {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, temporibus.</p>
       </div>
 
-      <div className={`${styles.card} ${styles.center}`}>
+      <div className={`${styles.card} ${styles.center} ${bp.lessThan("md") ? styles.p1 : ``}`}>
         <div className={`${styles.bg_img} ${styles.d_flex}`}>
           <img src={truck} alt="truck" />
         </div>
