@@ -6,9 +6,11 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaGoogle, FaLinkedin } from "react
 import useBreakpoint from "../../shared/hooks/useBreakpoint"
 
 const Footer = () => {
+  const bp = useBreakpoint();
+
   return (
     <div className={`${styles.footer} container-outer`}>
-      <div className={`${styles.dflex}`}>
+      <div className={`${bp.moreThan("sm") ? styles.dflex : styles.dblock}`}>
         <section className={`${styles.section}`}>
           <h5>Customer Service</h5>
           <ul className={`${styles.links}`}>

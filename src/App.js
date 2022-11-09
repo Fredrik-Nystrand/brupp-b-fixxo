@@ -9,8 +9,11 @@ import Hero from "./components/Hero/Hero"
 import Support from "./components/Support/Support"
 import StylesOffer from "./components/StylesOffer/StylesOffer"
 import Categories from "./components/Categories/Categories"
+import useBreakpoint from "./shared/hooks/useBreakpoint"
 
 function App() {
+  const bp = useBreakpoint();
+
   return (
     <div className="wrapper">
       <div className="container-outer">
@@ -32,7 +35,7 @@ function App() {
         </div>
         <StylesOffer />
         <div className="container-inner">
-          <div className="d-flex gap-2 mt-2 mb-2">
+          <div className={` ${`gap-2`, `mt-2`, `mb-2`} ${bp.moreThan("md") ? `d-flex` : `d-block` && `p1`}`}>
             <ProductGrid
               products={fakeProducts}
               vertical={true}

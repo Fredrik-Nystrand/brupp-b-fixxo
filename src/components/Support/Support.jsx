@@ -3,10 +3,19 @@ import styles from "./Support.module.css"
 import support from "../../assets/support/customer.svg"
 import payment from "../../assets/support/payment.svg"
 import truck from "../../assets/support/truck.svg"
+import useBreakpoint from "../../shared/hooks/useBreakpoint"
 
-const Support = ({ className }) => {
+const Support = () => {
+  const bp = useBreakpoint()
+
   return (
-    <div className={`${styles.grid} ${className}`}>
+    <div className={`${styles.grid}`} style={{
+      gridTemplateColumns: bp.lessThan("md")
+      ? `repeat(1, minmax(0, 1fr))`
+      : bp.moreThan("md")
+      ? `repeat(4, minmax(0, 1fr))`
+      : `repeat(2, minmax(0, 1fr))`
+    }}>
       <div className={`${styles.card} ${styles.center}`}>
         <div className={`${styles.bg_img} ${styles.d_flex}`}>
           <img src={support} alt="customer-service" />

@@ -196,6 +196,10 @@ body {
   display: flex;
 }
 
+.d-block {
+  display: block;
+}
+
 .d-grid {
   display: grid;
   max-width: 100%;
