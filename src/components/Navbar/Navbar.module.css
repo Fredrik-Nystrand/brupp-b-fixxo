@@ -5,12 +5,12 @@
   top: 0;
   z-index: 1000;
   list-style: none;
+  padding: .5rem;
 }
 .logo {
-  margin-right: 2rem;
+  margin: 1rem;
   font-size: 3rem;
   font-weight: 800;
-  padding: 1rem 2rem;
 }
 
 .dflex {
@@ -20,20 +20,20 @@
 }
 
 .navlinks_left {
-  margin: 0.5rem;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .navlinks_right {
-  /*  margin: .5rem 4rem; */
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
 .links {
+  margin-top: .3rem;
   font-size: 1.2rem;
   font-weight: 600;
   margin-left: 2rem;
@@ -57,7 +57,7 @@
   text-decoration: none;
 }
 
-.btn_bag {
+.btn_bag, .btn_login {
   border-style: none;
   font-size: 10px;
   font-weight: bold;
@@ -78,11 +78,40 @@
   width: 1.5rem;
   height: 1.5rem;
 }
-.bi_bag:hover {
-  color: rgba(250, 55, 21, 0.734);
+.bs_login {
   width: 1.5rem;
   height: 1.5rem;
 }
+
+.bi_bag:hover, .bs_login:hover, .nav_toggle_btn:hover {
+  color: rgba(250, 55, 21, 0.734);
+}
+
+/* Toggle Button */
+
+.d_none {
+  display: none;
+}
+
+.nav_toggle {
+  display: flex;
+}
+.nav_toggle_btn{
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  margin-top: .4rem;
+}
+.hamburger_menu {
+  width: 2rem;
+  height: 2rem;
+}
+.hamburge_menu_out {
+
+}
+
+/* Toggle Button End */ 
 
 /* Search Button */
 
