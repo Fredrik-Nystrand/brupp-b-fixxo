@@ -10,6 +10,7 @@ import Support from "./components/Support/Support"
 import Popup from "./components/Popup/Popup"
 import StylesOffer from "./components/StylesOffer/StylesOffer"
 import Categories from "./components/Categories/Categories"
+import InstagramGrid from "./components/InstagramGrid/InstagramGrid"
 
 function App() {
 
@@ -69,8 +70,10 @@ function App() {
               sorting={false}
             />
           </div>
-
           <Support className={`mt-4 mb-4`} />
+
+          <InstagramGrid />
+
         </div>
         <Footer />
       </div>
