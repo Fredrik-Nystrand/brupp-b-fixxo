@@ -7,12 +7,17 @@ import ProductGrid from "./components/ProductGrid/ProductGrid"
 import fakeProducts from "./Store/fakeProducts.json"
 import Hero from "./components/Hero/Hero"
 import Support from "./components/Support/Support"
+import Popup from "./components/Popup/Popup"
 import StylesOffer from "./components/StylesOffer/StylesOffer"
 import Categories from "./components/Categories/Categories"
 
 function App() {
+
+  const [close, setClose] = useState(false)
+
   return (
     <div className="wrapper">
+        {close || <Popup setClose={setClose}/>}
       <div className="container-outer">
         <Navbar />
         <Hero />
