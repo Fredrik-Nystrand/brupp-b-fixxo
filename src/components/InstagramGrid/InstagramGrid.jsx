@@ -6,6 +6,7 @@ import useBreakpoint from "../../shared/hooks/useBreakpoint"
 
 const Instagram = () => {
   const bp = useBreakpoint()
+  let uuid = 0
 
   return (
     <div className={`${styles.instagram_wrapper}`}>
@@ -20,7 +21,7 @@ const Instagram = () => {
             : `repeat(5, minmax(0, 1fr))`,
         }}>
         {[...Array(bp.lessThan("md") ? 6 : bp.lessThan("lg") ? 8 : 10)]?.map((card) => (
-          <InstagramCard />
+          <InstagramCard key={uuid++} />
         ))}
 
         <div className={`${styles.instagram_popup_wrapper}`}>
