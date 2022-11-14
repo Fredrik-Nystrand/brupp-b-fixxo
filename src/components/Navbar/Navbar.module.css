@@ -87,31 +87,61 @@
   color: rgba(250, 55, 21, 0.734);
 }
 
-/* Toggle Button */
+/*-- Mobile-view --*/
 
-.d_none {
-  display: none;
-}
-
-.nav_toggle {
-  display: flex;
-}
-.nav_toggle_btn{
-  border: none;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-  margin-top: .4rem;
-}
-.hamburger_menu {
+.hamburger_menu, .outlineClose {
   width: 2rem;
   height: 2rem;
 }
-.hamburge_menu_out {
-
+.hamburger_menu:hover, .outlineClose:hover{
+  color: var(--primary);
+}
+.nav_btn{
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  margin-top: .4rem;
+  z-index: 101;
+}
+.nav_close_btn {
+  position: absolute;
+  top: 1rem;
+  left: .5rem;
 }
 
-/* Toggle Button End */ 
+.nav_btn_visible {
+ visibility: visible;
+ opacity: 1;
+}
+
+.nav_btn_hidden{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navlinks_mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: #fff;
+  border-right: 3px solid var(--primary);
+  border-bottom: 3px solid var(--primary);
+  transition: 1s;
+  transform: translateX(-100vh);
+}
+
+.responsive_nav {
+  transform: none;
+}
+
+/*--Mobile-View--End-- */ 
 
 /* Search Button */
 
