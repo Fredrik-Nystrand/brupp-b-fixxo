@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css'
 import { BiSearch } from 'react-icons/bi';
 import { BiShoppingBag } from 'react-icons/bi'
@@ -6,22 +7,23 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { BsPerson } from 'react-icons/bs'
 
 const Navbar = () => {
-  return ( 
+  return (
     <div className={`${styles.navbar}`}>
       <div className={`${styles.dflex}`}>
-
-      <div className={`${styles.navlinks_left}`}>
+        <div className={`${styles.navlinks_left}`}>
         <div className={`${styles.nav_toggle}`}>
           <button className={`${styles.nav_toggle_btn}`}><GiHamburgerMenu className={`${styles.hamburger_menu}`}/></button>
         </div>
-            <h2 className={`${styles.logo}`}>Fixxo.</h2>
-          <div className={`${styles.dflex}`} style={{
-            
-          }}>
-              <li className={`${styles.links}`}><a href='#'>Home</a></li>
-              <li className={`${styles.links}`}>Categories</li>
-              <li className={`${styles.links}`}>Products</li> 
-          </div>
+          <h2 className={`${styles.logo}`}>Fixxo.</h2>
+          <li className={`${styles.links}`}>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li className={`${styles.links}`}>
+            <a href="#categories">Categories</a>
+          </li>
+          <li className={`${styles.links}`}>
+            <NavLink to="/shop">Products</NavLink>
+          </li>
         </div>
         <div className={`${styles.navlinks_right}`}>
           <li className={`${styles.links}`}>
