@@ -1,8 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styles from './Popup.module.css'
 import KeepTouch from '../../assets/Popup/KeepInTouch.png'
 import ButtonMain from '../ButtonMain/ButtonMain'
-import useBreakpoint from "../../shared/hooks/useBreakpoint"
 
 
 function Popup({setClose}) {

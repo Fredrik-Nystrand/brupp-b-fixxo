@@ -6,6 +6,9 @@
 .dflex {
   display: flex;
 }
+.dblock{
+  display: block;
+}
 .section {
   margin-left: 3rem;
 }

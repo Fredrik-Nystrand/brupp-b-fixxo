@@ -1,5 +1,4 @@
 import { useState } from "react"
-
 import ProductGrid from "../../components/ProductGrid/ProductGrid"
 import fakeProducts from "../../Store/fakeProducts.json"
 import Hero from "../../components/Hero/Hero"
@@ -8,8 +7,11 @@ import Popup from "../../components/Popup/Popup"
 import StylesOffer from "../../components/StylesOffer/StylesOffer"
 import Categories from "../../components/Categories/Categories"
 import InstagramGrid from "../../components/InstagramGrid/InstagramGrid"
+import useBreakpoint from "../../shared/hooks/useBreakpoint"
 
 const HomePage = () => {
+  const bp = useBreakpoint()
+
   const [close, setClose] = useState(false)
 
   return (
@@ -32,7 +34,7 @@ const HomePage = () => {
       </div>
       <StylesOffer />
       <div className="container-inner">
-        <div className="d-flex gap-2 mt-2 mb-2">
+        <div className={`${`d-flex`, `gap-2`, `mt-2`, `mb-2`} ${bp.moreThan("md") ? `d-flex` : `d-block` && `p1`}`}>
           <ProductGrid
             products={fakeProducts}
             vertical={true}

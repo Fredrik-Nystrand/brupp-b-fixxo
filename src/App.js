@@ -8,12 +8,12 @@ import SingleProductPage from "./Views/SingleProductPage/SingleProductPage"
 import Admin from "./Views/Admin/Admin"
 
 function App() {
+
   return (
     <BrowserRouter>
       <div className="wrapper">
         <div className="container-outer">
           <Navbar />
-
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/shop" element={<ProductPage />} />
