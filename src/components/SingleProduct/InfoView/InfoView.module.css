@@ -1,0 +1,32 @@
+.dflex {
+    display: flex;
+}
+
+.info_wrapper {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.link {
+    background: transparent;
+    text-decoration: none;
+    color: var(--dark);
+    border-bottom: 1px solid var(--dark);
+    padding-right: 2rem;
+}
+.link:hover {
+    border-bottom: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.link_active{
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+    background: transparent;
+    text-decoration: none;
+    padding-right: 2rem;
+}
+.line {
+    border-bottom: 1px solid var(--dark);
+    width: 70%;
+}
