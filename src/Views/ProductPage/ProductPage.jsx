@@ -3,9 +3,8 @@ import DetailView from "../../components/SingleProduct/DetailView/DetailView"
 import InfoView from "../../components/SingleProduct/InfoView/InfoView"
 
 const ProductPage = () => {
-  return <div className="container-inner">
-    <DetailView/>
-    <InfoView />
+  return <div>
+
   </div>
 }
 
