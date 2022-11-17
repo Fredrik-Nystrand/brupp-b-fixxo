@@ -8,21 +8,23 @@ const Admin = () => {
   const [sizes, setSizes] = useState([])
   const [categories, setCategories] = useState([])
   const [subCategories, setSubCategories] = useState([])
-
   const [selectedColors, setSelectedColors] = useState([])
   const [selectedSizes, setSelectedSizes] = useState([])
-  const [selectedCategory, setSelectedCategory] = useState()
-  const [selectedSubCategory, setSelectedSubCategory] = useState()
+  const [selectedCategory, setSelectedCategory] = useState("null")
+  const [selectedSubCategory, setSelectedSubCategory] = useState("null")
   const [selectedParentCategory, setSelectedParentCategory] = useState()
   const [name, setName] = useState("")
   const [imgUrl, setImgUrl] = useState("")
   const [price, setPrice] = useState(0)
   const [salePrice, setSalePrice] = useState(0)
-  const [description, setDescription] = useState("")
+  const [description, setDescription] = useState(
+    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex cupiditate itaque odio obcaecati. Voluptatem, maiores? Tempore rem earum modi alias officiis a deserunt dolorum possimus exercitationem doloremque impedit quis laudantium eligendi, velit cumque quibusdam, aperiam non adipisci dolore ullam? Fuga doloribus totam aperiam quisquam veritatis aliquam soluta temporibus provident in."
+  )
   const [newColor, setNewColor] = useState("")
   const [newSize, setNewSize] = useState("")
   const [newCategory, setNewCategory] = useState("")
   const [newSubCategory, setNewSubCategory] = useState("")
+  const [rating, setRating] = useState(0)
 
   const [productRequest, setProductRequest] = useState()
   const [colorRequest, setColorRequest] = useState()
@@ -153,6 +155,7 @@ const Admin = () => {
       description,
       price,
       salePrice,
+      rating,
       categoryId: selectedCategory,
       subCategoryId: selectedSubCategory,
       colors: selectedColors,
@@ -163,11 +166,13 @@ const Admin = () => {
   const resetProductForm = () => {
     setName("")
     setImgUrl("")
-    setDescription("")
+    setDescription(
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex cupiditate itaque odio obcaecati. Voluptatem, maiores? Tempore rem earum modi alias officiis a deserunt dolorum possimus exercitationem doloremque impedit quis laudantium eligendi, velit cumque quibusdam, aperiam non adipisci dolore ullam? Fuga doloribus totam aperiam quisquam veritatis aliquam soluta temporibus provident in."
+    )
     setPrice(0)
     setSalePrice(0)
-    setSelectedCategory()
-    setSelectedSubCategory()
+    setSelectedCategory("null")
+    setSelectedSubCategory("null")
     setSelectedColors([])
     setSelectedSizes([])
     setProductRequest()
@@ -221,7 +226,7 @@ const Admin = () => {
   }
 
   return (
-    <div className={`d-flex gap-3`}>
+    <div className={`${styles.wrapper} d-flex gap-3`}>
       <div className={`${styles.left}`}>
         <div className="mt-3 mb-3">
           <h2>Add Color</h2>
@@ -278,9 +283,46 @@ const Admin = () => {
         <div className="mt-3 mb-3">
           <h2>Add Product</h2>
 
-          <form className={`d-flex flex-column gap-1`} onSubmit={addProduct}>
+          <form className={`${styles.right} d-flex flex-column gap-1`} onSubmit={addProduct}>
+            <input
+              type="text"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              type="text"
+              placeholder="ImgUrl"
+              value={imgUrl}
+              onChange={(e) => setImgUrl(e.target.value)}
+            />
+            <select value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)}>
+              <option value="null" disabled>
+                Select Category
+              </option>
+              {categories?.map((category) => (
+                <option key={category.id} value={category.id}>
+                  {category.categoryName}
+                </option>
+              ))}
+            </select>
+            <select
+              value={selectedSubCategory}
+              onChange={(e) => setSelectedSubCategory(e.target.value)}>
+              <option value="null" disabled>
+                Select SubCategory
+              </option>
+              {subCategories
+                ?.filter((cat) => cat.categoryId == selectedCategory)
+                .map((category) => (
+                  <option key={category.id} value={category.id}>
+                    {category.categoryName}
+                  </option>
+                ))}
+            </select>
             <select
               multiple
+              value={selectedColors}
               onChange={(e) =>
                 setSelectedColors(
                   [...e.target]
@@ -299,6 +341,7 @@ const Admin = () => {
             </select>
             <select
               multiple
+              value={selectedSizes}
               onChange={(e) =>
                 setSelectedSizes(
                   [...e.target]
@@ -315,46 +358,13 @@ const Admin = () => {
                 </option>
               ))}
             </select>
-            <select defaultValue="null" onChange={(e) => setSelectedCategory(e.target.value)}>
-              <option value="null" disabled>
-                Select Category
-              </option>
-              {categories?.map((category) => (
-                <option key={category.id} value={category.id}>
-                  {category.categoryName}
-                </option>
-              ))}
-            </select>
-            <select defaultValue="null" onChange={(e) => setSelectedSubCategory(e.target.value)}>
-              <option value="null" disabled>
-                Select SubCategory
-              </option>
-              {subCategories
-                ?.filter((cat) => cat.categoryId == selectedCategory)
-                .map((category) => (
-                  <option key={category.id} value={category.id}>
-                    {category.categoryName}
-                  </option>
-                ))}
-            </select>
-            <input
-              type="text"
-              placeholder="Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <input
-              type="text"
-              placeholder="ImgUrl"
-              value={imgUrl}
-              onChange={(e) => setImgUrl(e.target.value)}
-            />
             <label htmlFor="price">Price</label>
             <input
               id="price"
               type="number"
               placeholder="Price"
               value={price}
+              min="0"
               onChange={(e) => setPrice(e.target.value)}
             />
             <label htmlFor="salePrice">Sale-Price</label>
@@ -363,8 +373,23 @@ const Admin = () => {
               type="number"
               placeholder="Sale-price"
               value={salePrice}
+              min="0"
               onChange={(e) => setSalePrice(e.target.value)}
             />
+            <div className={styles.rating}>
+              <label htmlFor="rating">Rating</label>
+              <input
+                id="rating"
+                type="range"
+                min="0"
+                max="5"
+                step="0.1"
+                value={rating}
+                onChange={(e) => setRating(e.target.value)}
+                className={styles.slider}
+              />
+              <span className={styles.ratingValue}>{rating}</span>
+            </div>
             <textarea
               name=""
               id=""

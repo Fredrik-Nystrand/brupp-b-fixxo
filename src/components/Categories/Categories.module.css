@@ -1,42 +1,39 @@
-
 .grid {
-    display: grid;
-    max-width: 100%;
-    gap: 1rem;
-
+  display: grid;
+  max-width: 100%;
+  gap: 1rem;
 }
 .card {
-    width: 100%; 
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.container{
-    position: relative;
-    display: flex;
-    justify-content: center;
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 .overlay {
-    background-color: rgba(0, 0, 0, 0.399);
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  background-color: rgba(0, 0, 0, 0.399);
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .center {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 50%;
+  width: 100%;
 }
 
 .electric {
-    object-position: top;
+  object-position: top;
 }
 
 .man {
-    object-position: top;
+  object-position: top;
 }
 .flase {
-    object-position: top;
+  object-position: top;
 }
