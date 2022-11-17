@@ -1,0 +1,24 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.right {
+  flex: 0.5;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ratingValue {
+  min-width: 1.5rem;
+}
+
+.slider {
+  flex: 1;
+}

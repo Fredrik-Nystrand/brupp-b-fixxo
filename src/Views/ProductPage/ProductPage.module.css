@@ -1,0 +1,60 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 15rem;
+  padding-top: 2rem;
+}
+
+.filterTitle {
+  border-bottom: 2px solid var(--dark-gray);
+  padding-bottom: 0.5rem;
+  color: var(--dark);
+}
+
+.filterTitle h3 {
+  font-weight: 500;
+}
+
+.filterOptions {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+  color: var(--dark-gray);
+  text-transform: capitalize;
+}
+
+.filterOptions p {
+  cursor: pointer;
+}
+
+.filterOptions p:hover {
+  color: var(--primary);
+}
+
+.filterOptions :global(.range-slider__thumb) {
+  background: var(--primary) !important;
+  border-radius: 0% !important;
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+}
+
+.filterOptions :global(.range-slider) {
+  height: 2px !important;
+}
+
+.filterOptions :global(.range-slider__range) {
+  background: var(--primary) !important;
+}
+
+.selected {
+  color: var(--primary);
+}

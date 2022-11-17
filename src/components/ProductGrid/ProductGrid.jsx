@@ -24,7 +24,13 @@ const ProductGrid = ({
     ArrayFunctions: { sortArrayOfObjects, sortArrayOfObjectsNumber },
   } = useHelpers()
 
-  const [sortedProducts, setSortedProducts] = useState(products)
+  const [sortedProducts, setSortedProducts] = useState([])
+
+  useEffect(() => {
+    if (products) {
+      setSortedProducts([...products])
+    }
+  }, [products])
 
   useEffect(() => {
     paginate.setArrayToPaginate(sortedProducts)
@@ -109,7 +115,7 @@ const ProductGrid = ({
           </div>
           <div className={`${styles.select}`}>
             <label>Show:</label>
-            <select defaultValue="6" onChange={handleFilter}>
+            <select defaultValue={numberOfItems} onChange={handleFilter}>
               <option value="6">06</option>
               <option value="12">12</option>
               <option value="24">24</option>

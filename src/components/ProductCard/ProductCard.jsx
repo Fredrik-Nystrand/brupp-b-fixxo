@@ -7,7 +7,7 @@ import Rating from "../Rating/Rating"
 const ProductCard = ({ product, vertical = false, className }) => {
   const bp = useBreakpoint()
   return (
-    <Link to={`/product/${product.id}`}>
+    <Link className={styles.link} to={`/product/${product.id}`}>
       <div className={`${className}`}>
         <div className={`${styles.wrapper} ${vertical ? "flex-row" : "flex-column"}`}>
           <div className={`${styles.imgWrapper} ${vertical ? styles.imgHalf : styles.imgFull} `}>
@@ -15,7 +15,7 @@ const ProductCard = ({ product, vertical = false, className }) => {
           </div>
           <div className={`${styles.contentWrapper}`}>
             <div className={`${styles.category} ${vertical ? "flex-start" : "flex-center"}`}>
-              {product.subCategory}
+              {product.subCategory.categoryName}
             </div>
             <div className={`${styles.name} ${vertical ? "flex-start" : "flex-center"}`}>
               <span>{product.name}</span>
