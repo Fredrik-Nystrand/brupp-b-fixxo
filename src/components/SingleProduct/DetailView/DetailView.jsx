@@ -20,7 +20,7 @@ const DetailView = () => {
         <div className={`${styles.right_wrapper}`}>
             <h2 className={`${styles.mb_1}`}>Knitted sweater with stripes</h2>
             <Rating className={`${styles.mb_2}`}/>
-            <p className={`${styles.price} ${styles.mb_1}`}>299 :-</p>
+            <p className={`${styles.price} ${styles.mb_1}`}>299,00 kr</p>
             <p className={`${styles.mb_2}`}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente perspiciatis rem dolor suscipit facere asperiores illum sunt odio, labore similique est magnam animi, atque impedit.</p>
             
             <div className={`${styles.sizes_wrapper} ${styles.dflex} ${styles.mb_2} `}>
